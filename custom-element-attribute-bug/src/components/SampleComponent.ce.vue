@@ -13,14 +13,14 @@ export default defineComponent({
     }
   },
   setup(props) {
-    console.log(props.myProp)
+    console.log(`Prop on setup: ${props.myProp}`)
 
     onMounted(()=>{
-      console.log(props.myProp)
+      console.log(`Prop on mount: ${props.myProp}`)
     })
 
     onBeforeUpdate(()=>{
-      console.log(props.myProp)
+      console.log(`Prop on update: ${props.myProp}`)
     })
   }
 })
